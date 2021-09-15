@@ -1,0 +1,13 @@
+@import "./utils/variables";
+@import "./utils/extensions";
+@import "./base/typographie";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+h1 {
+	color: $color-primary;
+}
