@@ -1,6 +1,18 @@
+/* UTILS */
+
 @import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
 @import "./utils/extensions";
+
+/* BASE */
+
 @import "./base/typographie";
+
+/* COMPONENTS */
+/* LAYOUTS */
+
+@import "./layouts/header";
 
 * {
 	margin: 0;
@@ -11,3 +23,5 @@
 h1 {
 	color: $color-primary;
 }
+
+/* 599px 999px 1200px */
