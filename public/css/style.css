@@ -108,6 +108,10 @@
 .restaurant-prev__info p {
   font-weight: 300;
 }
+.restaurant-prev__info--heart {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
 
 header {
   width: 100%;
