@@ -1,0 +1,12 @@
+@mixin grey-hue($hue: 3.5) {
+	background-color: darken($color: #fff, $amount: $hue);
+}
+
+@mixin card-display {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 1em;
+	@extend .box-shadow;
+}

@@ -1,27 +1,23 @@
-/* UTILS */
-
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
 
-/* BASE */
-
 @import "./base/typographie";
 
-/* COMPONENTS */
-/* LAYOUTS */
+@import "./components/buttons";
+@import "./components/step-card";
+@import "./components/restaurant-prev";
 
 @import "./layouts/header";
+@import "./layouts/footer";
+@import "./pages/home";
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
+	font-weight: 500;
 }
-h1 {
-	color: $color-primary;
-}
-
 /* 599px 999px 1200px */

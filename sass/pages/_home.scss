@@ -1,0 +1,35 @@
+#discover-section {
+	@extend .flex-center;
+	@include grey-hue;
+	flex-direction: column;
+	padding: 2.5em 0.5em 3em 0.5em;
+	text-align: center;
+	h2 {
+		@extend .h2-style;
+		width: 80%;
+		margin-bottom: 0.5em;
+	}
+	p {
+		font-weight: 300;
+		font-size: 1.1em;
+		margin-bottom: 1.5em;
+		color: $greyer;
+	}
+}
+
+#functionning-section {
+	padding: 2.5em 1.5em 2em;
+	h2 {
+		@extend .h2-style;
+		margin-bottom: 1em;
+	}
+}
+
+#restauants-section {
+	padding: 3em 1.5em 3em;
+	@include grey-hue;
+	h2 {
+		@extend .h2-style;
+		margin-bottom: 0.9em;
+	}
+}

@@ -1,1 +1,207 @@
-@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";@import"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";*{margin:0;padding:0;box-sizing:border-box;font-family:"Roboto",sans-serif}h1{color:#9356dc}/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.flex-center, #discover-section, header #localisation, header #logo, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-rendering, .restaurant-prev, .operating-steps a {
+  text-decoration: none;
+  color: black;
+}
+
+.h2-style, #restauants-section h2, #functionning-section h2, #discover-section h2 {
+  font-weight: 700;
+}
+
+.h4-style, .restaurant-prev__info h4 {
+  font-weight: 800;
+}
+
+.box-shadow, .restaurant-prev, .operating-steps .step-card, .button {
+  -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  padding: 1em 1.3em;
+  border-radius: 30px;
+  background: linear-gradient(355deg, #9356dc, #ff79da);
+  text-decoration: none;
+}
+.button__primary {
+  font-weight: 400;
+  color: white;
+}
+
+.operating-steps .step-card {
+  display: flex;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1.3em;
+  margin: 0 0 1.5em 0.8em;
+  border-radius: 15px;
+  transition: 200ms ease-in-out;
+}
+.operating-steps .step-card:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.operating-steps .step-card:hover > .step-card__icon {
+  color: #9356dc;
+  transform: scale(1.05);
+}
+.operating-steps .step-card__number {
+  position: absolute;
+  left: -1em;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+.operating-steps .step-card__icon {
+  color: #7e7e7e;
+  font-size: 1.3em;
+  margin: 0 1.2em 0 0.5em;
+  transition: 200ms ease-in-out;
+}
+.operating-steps .step-card__explanation {
+  font-weight: 600;
+}
+
+.restaurant-prev {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  position: relative;
+  height: 15em;
+}
+.restaurant-prev__img img {
+  width: 100%;
+  height: 11em;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurant-prev__new {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding: 0.5em 1em;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+.restaurant-prev__new p {
+  font-weight: 700;
+}
+.restaurant-prev__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em;
+}
+.restaurant-prev__info p {
+  font-weight: 300;
+}
+
+header {
+  width: 100%;
+}
+header #logo {
+  padding: 1.35em 0 0.7em;
+}
+header #logo img {
+  width: 10em;
+}
+header #localisation {
+  background-color: #eaeaea;
+  padding: 1em 0;
+  box-shadow: inset 0 0.2em 0.2em rgba(0, 0, 0, 0.1);
+}
+header #localisation i,
+header #localisation input {
+  color: #353535;
+  font-size: 1em;
+}
+header #localisation input {
+  border: none;
+  background-color: #eaeaea;
+  width: 150px;
+  margin-left: 1em;
+}
+header #localisation input::placeholder {
+  color: #353535;
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  background-color: #353535;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer h5 {
+  font-family: Shrikhand, "sans-serif";
+  font-size: 1.1em;
+  color: white;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  font-weight: 200;
+}
+
+#discover-section {
+  background-color: #f6f6f6;
+  flex-direction: column;
+  padding: 2.5em 0.5em 3em 0.5em;
+  text-align: center;
+}
+#discover-section h2 {
+  width: 80%;
+  margin-bottom: 0.5em;
+}
+#discover-section p {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  color: #353535;
+}
+
+#functionning-section {
+  padding: 2.5em 1.5em 2em;
+}
+#functionning-section h2 {
+  margin-bottom: 1em;
+}
+
+#restauants-section {
+  padding: 3em 1.5em 3em;
+  background-color: #f6f6f6;
+}
+#restauants-section h2 {
+  margin-bottom: 0.9em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* 599px 999px 1200px */
+
+/*# sourceMappingURL=style.css.map */
