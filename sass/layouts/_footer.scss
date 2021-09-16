@@ -1,10 +1,12 @@
 footer {
 	width: 100%;
-	padding: 1em;
+	padding: 1.5em 0 2em 1.5em;
 	background-color: $greyer;
 	a {
 		text-decoration: none;
 		color: white;
+		line-height: 1.6em;
+		font-weight: 400;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -19,5 +21,8 @@ footer {
 		flex-direction: column;
 		margin-top: 1em;
 		font-weight: 200;
+		i {
+			width: 2em;
+		}
 	}
 }

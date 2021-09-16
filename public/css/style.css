@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-.flex-center, #discover-section, header #localisation, header #logo, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
+.flex-center, #discover-section, .loader, header #localisation, header #logo, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,12 +140,14 @@ header #localisation input::placeholder {
 
 footer {
   width: 100%;
-  padding: 1em;
+  padding: 1.5em 0 2em 1.5em;
   background-color: #353535;
 }
 footer a {
   text-decoration: none;
   color: white;
+  line-height: 1.6em;
+  font-weight: 400;
 }
 footer a:hover {
   text-decoration: underline;
@@ -161,7 +163,94 @@ footer .footer-links {
   margin-top: 1em;
   font-weight: 200;
 }
+footer .footer-links i {
+  width: 2em;
+}
 
+.loader {
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  cursor: wait;
+  animation: loader 3000ms;
+}
+.loader__food-container {
+  display: flex;
+  font-size: 5em;
+}
+.loader__food-container--item {
+  margin: 0.2em;
+}
+.loader__food-container #loader-fish {
+  color: #9356dc;
+  animation: jumping-food 1300ms cubic-bezier(0.43, 1.01, 0.18, 0.98);
+}
+.loader__food-container #loader-burger {
+  color: #ff79da;
+  animation: jumping-food 1300ms 1000ms cubic-bezier(0.43, 1.01, 0.18, 0.98);
+}
+.loader__food-container #loader-pizza {
+  color: #99e2d0;
+  animation: jumping-food 1300ms 1700ms cubic-bezier(0.43, 1.01, 0.18, 0.98);
+}
+.loader__text {
+  animation: loader-text 2000ms infinite;
+  margin-top: 1em;
+  font-family: Shrikhand, "sans-serif";
+  font-size: 3em;
+  font-weight: 700;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9;
+  }
+  80% {
+    opacity: 1;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes jumping-food {
+  0% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: rotateY(300deg) translateY(-60px);
+  }
+  66% {
+    transform: translateY(40px);
+  }
+  84% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes loader-text {
+  0% {
+    color: #99e2d0;
+  }
+  25% {
+    color: #ff79da;
+  }
+  75% {
+    color: #9356dc;
+  }
+  100% {
+    color: #99e2d0;
+  }
+}
 #discover-section {
   background-color: #f6f6f6;
   flex-direction: column;
