@@ -109,8 +109,34 @@
   font-weight: 300;
 }
 .restaurant-prev__info--heart {
+  position: relative;
+  height: 1em;
   font-size: 1.5em;
   margin-right: 0.5em;
+  color: #353535;
+}
+.restaurant-prev__info--heart:hover > .full-heart {
+  opacity: 1;
+}
+.restaurant-prev__info--heart:hover > .border-heart {
+  opacity: 0;
+}
+.restaurant-prev__info--heart:active > .full-heart {
+  transform: scale(0.9);
+}
+.restaurant-prev__info--heart .border-heart {
+  transition: 300ms;
+}
+.restaurant-prev__info--heart .full-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 300ms;
+  background: linear-gradient(215deg, #9356dc 30%, #ff79da 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header {
