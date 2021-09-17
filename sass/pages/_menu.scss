@@ -4,7 +4,7 @@
 	margin-bottom: -2.5em;
 	img {
 		width: 100%;
-		object-fit: cover;
+		object-fit: cover / center;
 	}
 }
 
@@ -47,5 +47,16 @@
 			height: 3px;
 			background-color: $color-tertiary;
 		}
+	}
+}
+
+.order-btn {
+	@extend .flex-center;
+	margin: 3em 0 1.5em;
+	.button {
+		@extend .flex-center;
+		width: 12em;
+		color: white;
+		font-weight: 400;
 	}
 }

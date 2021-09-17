@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-.flex-center, #discover-section, .loader, header #button-to-home, header #localisation, header #logo, .dish-card__info--add-dish, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
+.flex-center, .order-btn .button, .order-btn, #discover-section, .loader, header #button-to-home, header #localisation, header #logo, .dish-card__info--add-dish, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +410,7 @@ footer .footer-links i {
 }
 .restaurant-illustration img {
   width: 100%;
-  object-fit: cover;
+  object-fit: cover/center;
 }
 
 #menu-grid {
@@ -455,6 +455,15 @@ footer .footer-links i {
   width: 2.5em;
   height: 3px;
   background-color: #99e2d0;
+}
+
+.order-btn {
+  margin: 3em 0 1.5em;
+}
+.order-btn .button {
+  width: 12em;
+  color: white;
+  font-weight: 400;
 }
 
 * {
