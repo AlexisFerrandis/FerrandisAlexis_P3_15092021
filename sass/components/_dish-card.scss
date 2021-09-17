@@ -1,8 +1,20 @@
+$num-dishes: 9;
+$anim-dur: 2000ms;
+$anim-delay: $anim-dur / $num-dishes;
+
 .dish-card {
 	@include card-display(10px, row);
 	justify-content: space-between;
 	overflow: hidden;
 	@extend .links-rendering;
+	animation: dishes-animation $anim-dur forwards;
+	opacity: 0;
+	transform: translateY(2em);
+	@for $i from 1 through $num-dishes {
+		&--#{$i} {
+			animation-delay: $anim-delay * $i;
+		}
+	}
 	&__info {
 		display: flex;
 		width: 100%;
@@ -59,5 +71,16 @@
 		i {
 			transform: rotate(0deg);
 		}
+	}
+}
+
+@keyframes dishes-animation {
+	0% {
+		opacity: 0;
+		transform: translateY(2em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
