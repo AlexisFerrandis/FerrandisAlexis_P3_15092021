@@ -1,0 +1,35 @@
+.restaurant-illustration {
+	width: 100%;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.restaurant-name {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	h1 {
+		font-family: Shrikhand, "sans-serif";
+	}
+}
+.menu-moment {
+	margin: 0 2em;
+	h3 {
+		position: relative;
+		text-transform: uppercase;
+		color: $greyer;
+		font-weight: 400;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 2em;
+			height: 3px;
+			background-color: $color-tertiary;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.dish-card {
+	@include card-display(10px, row);
+	justify-content: space-between;
+	overflow: hidden;
+	@extend .links-rendering;
+	&__info {
+		display: flex;
+		width: 100%;
+		&--text {
+			width: 100%;
+			padding: 0.8em 0em 0.8em 0.8em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			@extend .text-overflow;
+			h4 {
+				font-weight: 700;
+				font-size: 1.1em;
+				margin-bottom: 0.2em;
+				@extend .text-overflow;
+			}
+			p {
+				font-weight: 400;
+				color: $greyer;
+				@extend .text-overflow;
+			}
+		}
+		&--add-dish {
+			@extend .flex-center;
+			position: relative;
+			width: 0em;
+			background-color: $color-tertiary;
+			transform: translateX(120%);
+			transition: 500ms;
+			color: white;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			font-size: 1.4em;
+		}
+		&--price {
+			position: relative;
+			margin: 2.5em 1em 0 1em;
+			span {
+				color: $greyer;
+				font-weight: 800;
+			}
+		}
+	}
+
+	&:hover > .dish-card__info > .dish-card__info--add-dish {
+		transform: translateX(0%);
+		width: 4em;
+	}
+}

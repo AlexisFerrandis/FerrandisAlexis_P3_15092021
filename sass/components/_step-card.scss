@@ -10,7 +10,7 @@
 		margin: 0 0 1.5em 0.8em;
 		border-radius: 15px;
 		@extend .box-shadow;
-		transition: 200ms ease-in-out;
+		transition: $anim-short-time ease-in-out;
 		&:hover {
 			background-color: rgba(147, 86, 220, 0.1);
 		}
@@ -34,7 +34,7 @@
 			color: $grey;
 			font-size: 1.3em;
 			margin: 0 1.2em 0 0.5em;
-			transition: 200ms ease-in-out;
+			transition: $anim-short-time ease-in-out;
 		}
 		&__explanation {
 			@extend .flex-center;

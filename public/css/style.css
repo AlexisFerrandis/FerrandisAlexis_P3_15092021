@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-.flex-center, #discover-section, .loader, header #localisation, header #logo, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
+.flex-center, #discover-section, .loader, header #button-to-home, header #localisation, header #logo, .dish-card__info--add-dish, .operating-steps .step-card__explanation, .operating-steps .step-card__number {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.links-rendering, .restaurant-prev, .operating-steps a {
+.links-rendering, .dish-card, .restaurant-prev, .operating-steps a {
   text-decoration: none;
   color: black;
 }
@@ -19,9 +19,15 @@
   font-weight: 800;
 }
 
-.box-shadow, .restaurant-prev, .operating-steps .step-card, .button {
+.box-shadow, .dish-card, .restaurant-prev, .operating-steps .step-card, .button {
   -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.text-overflow, .dish-card__info--text p, .dish-card__info--text h4, .dish-card__info--text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .button {
@@ -29,10 +35,47 @@
   border-radius: 30px;
   background: linear-gradient(355deg, #9356dc, #ff79da);
   text-decoration: none;
+  transition: 300ms;
 }
 .button__primary {
   font-weight: 400;
   color: white;
+}
+.button:hover {
+  filter: brightness(1.1);
+  -webkit-box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.heart-presentation {
+  position: relative;
+  height: 1em;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  color: #353535;
+}
+.heart-presentation:hover > .full-heart {
+  opacity: 1;
+}
+.heart-presentation:hover > .border-heart {
+  opacity: 0;
+}
+.heart-presentation:active > .full-heart {
+  transform: scale(0.9);
+}
+.heart-presentation .border-heart {
+  transition: 300ms;
+}
+.heart-presentation .full-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 300ms;
+  background: linear-gradient(215deg, #9356dc 30%, #ff79da 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .operating-steps .step-card {
@@ -42,7 +85,7 @@
   padding: 1.3em;
   margin: 0 0 1.5em 0.8em;
   border-radius: 15px;
-  transition: 200ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .operating-steps .step-card:hover {
   background-color: rgba(147, 86, 220, 0.1);
@@ -65,7 +108,7 @@
   color: #7e7e7e;
   font-size: 1.3em;
   margin: 0 1.2em 0 0.5em;
-  transition: 200ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .operating-steps .step-card__explanation {
   font-weight: 600;
@@ -108,39 +151,63 @@
 .restaurant-prev__info p {
   font-weight: 300;
 }
-.restaurant-prev__info--heart {
-  position: relative;
-  height: 1em;
-  font-size: 1.5em;
-  margin-right: 0.5em;
+
+.dish-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.dish-card__info {
+  display: flex;
+  width: 100%;
+}
+.dish-card__info--text {
+  width: 100%;
+  padding: 0.8em 0em 0.8em 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dish-card__info--text h4 {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+.dish-card__info--text p {
+  font-weight: 400;
   color: #353535;
 }
-.restaurant-prev__info--heart:hover > .full-heart {
-  opacity: 1;
+.dish-card__info--add-dish {
+  position: relative;
+  width: 0em;
+  background-color: #99e2d0;
+  transform: translateX(120%);
+  transition: 500ms;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.4em;
 }
-.restaurant-prev__info--heart:hover > .border-heart {
-  opacity: 0;
+.dish-card__info--price {
+  position: relative;
+  margin: 2.5em 1em 0 1em;
 }
-.restaurant-prev__info--heart:active > .full-heart {
-  transform: scale(0.9);
+.dish-card__info--price span {
+  color: #353535;
+  font-weight: 800;
 }
-.restaurant-prev__info--heart .border-heart {
-  transition: 300ms;
-}
-.restaurant-prev__info--heart .full-heart {
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  transition: 300ms;
-  background: linear-gradient(215deg, #9356dc 30%, #ff79da 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.dish-card:hover > .dish-card__info > .dish-card__info--add-dish {
+  transform: translateX(0%);
+  width: 4em;
 }
 
 header {
   width: 100%;
+  position: relative;
 }
 header #logo {
   padding: 1.35em 0 0.7em;
@@ -167,6 +234,19 @@ header #localisation input {
 header #localisation input::placeholder {
   color: #353535;
 }
+header #button-to-home {
+  position: absolute;
+  height: 100%;
+  width: 3em;
+  font-size: 1.3em;
+  transition: 300ms;
+}
+header #button-to-home:hover {
+  transform: translateX(-0.2em);
+}
+header #button-to-home a {
+  color: #353535;
+}
 
 footer {
   width: 100%;
@@ -186,6 +266,7 @@ footer h5 {
   font-family: Shrikhand, "sans-serif";
   font-size: 1.1em;
   color: white;
+  cursor: pointer;
 }
 footer .footer-links {
   display: flex;
@@ -311,6 +392,43 @@ footer .footer-links i {
 }
 #restauants-section h2 {
   margin-bottom: 0.9em;
+}
+
+.restaurant-illustration {
+  width: 100%;
+}
+.restaurant-illustration img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant-name h1 {
+  font-family: Shrikhand, "sans-serif";
+}
+
+.menu-moment {
+  margin: 0 2em;
+}
+.menu-moment h3 {
+  position: relative;
+  text-transform: uppercase;
+  color: #353535;
+  font-weight: 400;
+}
+.menu-moment h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2em;
+  height: 3px;
+  background-color: #99e2d0;
 }
 
 * {

@@ -2,11 +2,11 @@
 	background-color: darken($color: #fff, $amount: $hue);
 }
 
-@mixin card-display {
+@mixin card-display($bd-rad: 20px, $flex-dir: column) {
 	display: flex;
-	flex-direction: column;
+	flex-direction: $flex-dir;
 	background-color: white;
-	border-radius: 20px;
+	border-radius: $bd-rad;
 	margin-bottom: 1em;
 	@extend .box-shadow;
 }

@@ -1,5 +1,6 @@
 header {
 	width: 100%;
+	position: relative;
 	#logo {
 		@extend .flex-center;
 		padding: 1.35em 0 0.7em;
@@ -25,6 +26,20 @@ header {
 			&::placeholder {
 				color: $greyer;
 			}
+		}
+	}
+	#button-to-home {
+		position: absolute;
+		@extend .flex-center;
+		height: 100%;
+		width: 3em;
+		font-size: 1.3em;
+		transition: $anim-short-time;
+		&:hover {
+			transform: translateX(-0.2em);
+		}
+		a {
+			color: $greyer;
 		}
 	}
 }

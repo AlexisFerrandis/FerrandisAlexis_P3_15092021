@@ -6,13 +6,17 @@
 @import "./base/typographie";
 
 @import "./components/buttons";
+@import "./components/heart-anim";
 @import "./components/step-card";
 @import "./components/restaurant-prev";
+@import "./components/dish-card";
 
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/loader";
+
 @import "./pages/home";
+@import "./pages/menu";
 
 * {
 	margin: 0;

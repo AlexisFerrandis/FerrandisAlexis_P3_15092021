@@ -35,35 +35,5 @@
 		p {
 			font-weight: 300;
 		}
-		&--heart {
-			position: relative;
-			height: 1em;
-			font-size: 1.5em;
-			margin-right: 0.5em;
-			color: $greyer;
-			&:hover > .full-heart {
-				opacity: 1;
-			}
-			&:hover > .border-heart {
-				opacity: 0;
-			}
-			&:active > .full-heart {
-				transform: scale(0.9);
-			}
-			.border-heart {
-				transition: 300ms;
-			}
-			.full-heart {
-				position: absolute;
-				top: 0;
-				right: 0;
-				opacity: 0;
-				transition: 300ms;
-				background: linear-gradient(215deg, rgba(147, 86, 220, 1) 30%, rgba(255, 121, 218, 1) 90%);
-				background-clip: text;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
 	}
 }
