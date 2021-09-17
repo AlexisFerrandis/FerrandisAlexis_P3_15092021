@@ -1,33 +1,49 @@
 .restaurant-illustration {
 	width: 100%;
+	height: 16em;
+	margin-bottom: -2.5em;
 	img {
 		width: 100%;
 		object-fit: cover;
 	}
 }
 
+#menu-grid {
+	position: relative;
+	@include grey-hue;
+	padding: 2em 1em;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
 .restaurant-name {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 1.8em;
 	h1 {
 		font-family: Shrikhand, "sans-serif";
+		font-size: 1.8em;
+	}
+	.heart-presentation {
+		margin-right: 0.5em;
 	}
 }
 .menu-moment {
-	margin: 0 2em;
+	margin-bottom: 2em;
 	h3 {
 		position: relative;
 		text-transform: uppercase;
 		color: $greyer;
+		margin-bottom: 1.2em;
 		font-weight: 400;
+		font-size: 1em;
 		&::after {
 			content: "";
 			position: absolute;
-			bottom: 0;
+			bottom: -0.5em;
 			left: 0;
-			width: 2em;
+			width: 2.5em;
 			height: 3px;
 			background-color: $color-tertiary;
 		}

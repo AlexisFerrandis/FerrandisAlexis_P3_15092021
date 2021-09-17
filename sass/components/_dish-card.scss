@@ -8,21 +8,31 @@
 		width: 100%;
 		&--text {
 			width: 100%;
-			padding: 0.8em 0em 0.8em 0.8em;
+			padding: 0.8em 0em 0.7em 0.5em;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			@extend .text-overflow;
 			h4 {
-				font-weight: 700;
+				font-weight: 600;
 				font-size: 1.1em;
 				margin-bottom: 0.2em;
 				@extend .text-overflow;
 			}
 			p {
 				font-weight: 400;
+				font-size: 0.9em;
 				color: $greyer;
 				@extend .text-overflow;
+			}
+		}
+		&--price {
+			position: relative;
+			margin: 2.3em 1em 0 1.5em;
+			span {
+				font-size: 0.9em;
+				color: $greyer;
+				font-weight: 800;
 			}
 		}
 		&--add-dish {
@@ -37,18 +47,17 @@
 			border-top-right-radius: 10px;
 			font-size: 1.4em;
 		}
-		&--price {
-			position: relative;
-			margin: 2.5em 1em 0 1em;
-			span {
-				color: $greyer;
-				font-weight: 800;
-			}
+		i {
+			transform: rotate(-350deg);
+			transition: 500ms;
 		}
 	}
 
 	&:hover > .dish-card__info > .dish-card__info--add-dish {
 		transform: translateX(0%);
 		width: 4em;
+		i {
+			transform: rotate(0deg);
+		}
 	}
 }
