@@ -411,6 +411,13 @@ footer .footer-links i {
     color: #99e2d0;
   }
 }
+@media (min-width: 899px) {
+  .desktop-discover-functionning {
+    display: flex;
+    position: relative;
+  }
+}
+
 #discover-section {
   background-color: #f6f6f6;
   flex-direction: column;
@@ -427,12 +434,32 @@ footer .footer-links i {
   margin-bottom: 1.5em;
   color: #353535;
 }
+@media (min-width: 899px) {
+  #discover-section {
+    width: 50%;
+    background-color: transparent;
+  }
+}
 
 #functionning-section {
   padding: 2.5em 1.5em 2em;
 }
 #functionning-section h2 {
   margin-bottom: 1em;
+}
+@media (min-width: 599px) and (max-width: 899px) {
+  #functionning-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (min-width: 899px) {
+  #functionning-section {
+    width: 50%;
+  }
 }
 
 #restaurants-section {
@@ -442,7 +469,88 @@ footer .footer-links i {
 #restaurants-section h2 {
   margin-bottom: 0.9em;
 }
+@media (min-width: 599px) and (max-width: 899px) {
+  #restaurants-section .restaurants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 1em;
+  }
+}
+@media (min-width: 899px) {
+  #restaurants-section .restaurants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 1em;
+  }
+}
 
+/* Optional animation */
+.desktop-funny-animation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  font-size: 4em;
+}
+.desktop-funny-animation .food-anim {
+  transform: translateY(2em);
+  animation: food-levitating 10000ms cubic-bezier(0, 0.42, 0.75, 0.91);
+}
+.desktop-funny-animation .food-anim--1 {
+  animation-delay: 650ms;
+}
+.desktop-funny-animation .food-anim--2 {
+  animation-delay: 1300ms;
+}
+.desktop-funny-animation .food-anim--3 {
+  animation-delay: 1950ms;
+}
+.desktop-funny-animation .food-anim--4 {
+  animation-delay: 2600ms;
+}
+.desktop-funny-animation .food-anim--5 {
+  animation-delay: 3250ms;
+}
+.desktop-funny-animation .food-anim--6 {
+  animation-delay: 3900ms;
+}
+.desktop-funny-animation .food-anim--7 {
+  animation-delay: 4550ms;
+}
+.desktop-funny-animation .food-anim--8 {
+  animation-delay: 5200ms;
+}
+.desktop-funny-animation .food-anim--9 {
+  animation-delay: 5850ms;
+}
+.desktop-funny-animation .food-anim--10 {
+  animation-delay: 6500ms;
+}
+.desktop-funny-animation .food-anim--1, .desktop-funny-animation .food-anim--5, .desktop-funny-animation .food-anim--8 {
+  color: #9356dc;
+}
+.desktop-funny-animation .food-anim--4, .desktop-funny-animation .food-anim--2, .desktop-funny-animation .food-anim--6, .desktop-funny-animation .food-anim--10 {
+  color: #ff79da;
+}
+.desktop-funny-animation .food-anim--3, .desktop-funny-animation .food-anim--9, .desktop-funny-animation .food-anim--7 {
+  color: #99e2d0;
+}
+
+@keyframes food-levitating {
+  0% {
+    transform: translateY(2em);
+  }
+  100% {
+    transform: translateY(-10em);
+  }
+}
 .restaurant-illustration {
   width: 100%;
   height: 16em;
@@ -515,6 +623,24 @@ footer .footer-links i {
   scroll-behavior: smooth;
 }
 
-/* 599px 799px 1200px */
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9356dc;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bd9fe0;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
 
 /*# sourceMappingURL=style.css.map */

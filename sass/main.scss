@@ -27,4 +27,19 @@
 	scroll-behavior: smooth;
 }
 
-/* 599px 799px 1200px */
+::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+}
+::-webkit-scrollbar-thumb {
+	background: #9356dc;
+	border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #bd9fe0;
+}
+::-webkit-scrollbar-track {
+	background: #f0f0f0;
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
