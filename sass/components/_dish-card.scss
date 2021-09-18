@@ -1,4 +1,4 @@
-$num-dishes: 9;
+$num-dishes: 10;
 $anim-dur: 2000ms;
 $anim-delay: $anim-dur / $num-dishes;
 
@@ -64,7 +64,6 @@ $anim-delay: $anim-dur / $num-dishes;
 			transition: 500ms;
 		}
 	}
-
 	&:hover > .dish-card__info > .dish-card__info--add-dish {
 		transform: translateX(0%);
 		width: 4em;
@@ -72,6 +71,7 @@ $anim-delay: $anim-dur / $num-dishes;
 			transform: rotate(0deg);
 		}
 	}
+	cursor: pointer;
 }
 
 @keyframes dishes-animation {
