@@ -520,37 +520,37 @@ footer .footer-links i {
   }
   .desktop-funny-animation .food-anim {
     transform: translateY(2em);
-    animation: food-levitating 10000ms cubic-bezier(0, 0.42, 0.75, 0.91);
+    animation: food-levitating 10000ms cubic-bezier(0, 0.42, 0.75, 0.91) infinite;
   }
   .desktop-funny-animation .food-anim--1 {
-    animation-delay: 650ms;
+    animation-delay: 1850ms;
   }
   .desktop-funny-animation .food-anim--2 {
-    animation-delay: 1300ms;
+    animation-delay: 1800ms;
   }
   .desktop-funny-animation .food-anim--3 {
-    animation-delay: 1950ms;
+    animation-delay: 2100ms;
   }
   .desktop-funny-animation .food-anim--4 {
-    animation-delay: 2600ms;
+    animation-delay: 8200ms;
   }
   .desktop-funny-animation .food-anim--5 {
-    animation-delay: 3250ms;
+    animation-delay: 3750ms;
   }
   .desktop-funny-animation .food-anim--6 {
-    animation-delay: 3900ms;
+    animation-delay: 8700ms;
   }
   .desktop-funny-animation .food-anim--7 {
-    animation-delay: 4550ms;
+    animation-delay: 12600ms;
   }
   .desktop-funny-animation .food-anim--8 {
-    animation-delay: 5200ms;
+    animation-delay: 8400ms;
   }
   .desktop-funny-animation .food-anim--9 {
-    animation-delay: 5850ms;
+    animation-delay: 7200ms;
   }
   .desktop-funny-animation .food-anim--10 {
-    animation-delay: 6500ms;
+    animation-delay: 24000ms;
   }
   .desktop-funny-animation .food-anim--1, .desktop-funny-animation .food-anim--5, .desktop-funny-animation .food-anim--8 {
     color: #9356dc;

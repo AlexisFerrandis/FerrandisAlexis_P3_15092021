@@ -87,10 +87,10 @@
 		font-size: 4em;
 		.food-anim {
 			transform: translateY(2em);
-			animation: food-levitating 10000ms cubic-bezier(0, 0.42, 0.75, 0.91);
+			animation: food-levitating 10000ms cubic-bezier(0, 0.42, 0.75, 0.91) infinite;
 			@for $i from 1 through $num-food {
 				&--#{$i} {
-					animation-delay: $food-delay * $i;
+					animation-delay: $food-delay * $i * random(50);
 				}
 			}
 			&--1,
