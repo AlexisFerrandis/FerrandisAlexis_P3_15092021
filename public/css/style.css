@@ -53,6 +53,7 @@
   font-size: 1.5em;
   margin-right: 0.5em;
   color: #353535;
+  cursor: pointer;
 }
 .heart-presentation:hover > .full-heart {
   opacity: 1;
@@ -123,6 +124,7 @@
   position: relative;
   height: 15em;
   cursor: pointer;
+  transition: 300ms;
 }
 .restaurant-prev__img img {
   width: 100%;
@@ -151,6 +153,12 @@
 }
 .restaurant-prev__info p {
   font-weight: 300;
+}
+.restaurant-prev:hover {
+  transform: scale(1.02);
+}
+.restaurant-prev:active {
+  transform: scale(1);
 }
 
 .dish-card {
@@ -420,6 +428,8 @@ footer .footer-links i {
   .desktop-discover-functionning {
     display: flex;
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
 
@@ -561,6 +571,13 @@ footer .footer-links i {
   }
 }
 
+.menu-body {
+  background-color: rgba(153, 226, 208, 0.2);
+}
+.menu-body header {
+  background-color: white;
+}
+
 .restaurant-illustration {
   width: 100%;
   height: 16em;
@@ -583,6 +600,12 @@ footer .footer-links i {
   padding: 2em 1em;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+}
+@media (min-width: 899px) {
+  #menu-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .restaurant-name {
@@ -622,7 +645,7 @@ footer .footer-links i {
 }
 @media (min-width: 899px) {
   .menu-moment {
-    width: 31%;
+    width: 32%;
   }
 }
 
@@ -634,6 +657,11 @@ footer .footer-links i {
   width: 12em;
   color: white;
   font-weight: 400;
+}
+@media (min-width: 899px) {
+  .order-btn {
+    margin: 1em 0 1.5em;
+  }
 }
 
 @media (min-width: 899px) {

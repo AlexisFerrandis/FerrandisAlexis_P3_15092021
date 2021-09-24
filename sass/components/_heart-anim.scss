@@ -4,6 +4,7 @@
 	font-size: 1.5em;
 	margin-right: 0.5em;
 	color: $greyer;
+	cursor: pointer;
 	&:hover > .full-heart {
 		opacity: 1;
 	}

@@ -2,6 +2,8 @@
 	@include desktop-breakpoint {
 		display: flex;
 		position: relative;
+		max-width: 1400px;
+		margin: 0 auto;
 	}
 }
 

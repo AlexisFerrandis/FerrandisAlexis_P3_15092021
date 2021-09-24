@@ -3,6 +3,8 @@
 	position: relative;
 	height: 15em;
 	@extend .links-rendering;
+	cursor: pointer;
+	transition: $anim-short-time;
 	&__img {
 		img {
 			width: 100%;
@@ -36,5 +38,10 @@
 			font-weight: 300;
 		}
 	}
-	cursor: pointer;
+	&:hover {
+		transform: scale(1.02);
+	}
+	&:active {
+		transform: scale(1);
+	}
 }
