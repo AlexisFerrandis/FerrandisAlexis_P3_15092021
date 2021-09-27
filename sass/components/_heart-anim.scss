@@ -11,9 +11,6 @@
 	&:hover > .border-heart {
 		opacity: 0;
 	}
-	&:active > .full-heart {
-		transform: scale(0.9);
-	}
 	.border-heart {
 		transition: $anim-short-time;
 	}
