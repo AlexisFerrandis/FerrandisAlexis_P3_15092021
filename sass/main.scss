@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
 
@@ -25,6 +24,11 @@
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 ::-webkit-scrollbar {
