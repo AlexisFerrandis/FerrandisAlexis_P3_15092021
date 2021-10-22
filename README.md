@@ -9,6 +9,9 @@ The idea was to integrate, then animate a web page with the mobile first approac
 * Develop a site offering the menu of 4 major Parisian restaurants.
 * Allow online reservations and menu composition.
 
+## Preview 
+
+![Screenchot-preview](./public/images/preview-screeshot.PNG)
 
 ## Technologies
 
@@ -55,6 +58,4 @@ Logo & titles: Shrikhand / Text: Roboto.
 
 Primary: # 9356DC / Secondary: # FF79DA / Tertiary: # 99E2D0.
 
-## Preview 
 
-![Screenchot-preview](./public/images/preview-screeshot.PNG)
