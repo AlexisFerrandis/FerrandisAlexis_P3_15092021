@@ -1,7 +1,7 @@
 # ohmyfood
 ## Third project with Openclassrooms
 
-The idea was to integrate, then animate a web page with the mobile first approach.
+The idea was to integrate, then animate a web page with the mobile first approach, without JavaScript.
 
 
 ### Challenges 
